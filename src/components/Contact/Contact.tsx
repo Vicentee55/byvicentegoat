@@ -400,6 +400,7 @@ export const Component = () => {
                 name="name"
                 type="text"
                 autoComplete="name"
+                maxLength={100}
                 placeholder="Seu nome"
                 value={values.name}
                 aria-invalid={Boolean(errors.name)}
@@ -418,6 +419,7 @@ export const Component = () => {
                 type="email"
                 inputMode="email"
                 autoComplete="email"
+                maxLength={120}
                 placeholder="voce@empresa.com"
                 value={values.email}
                 aria-invalid={Boolean(errors.email)}
@@ -461,6 +463,7 @@ export const Component = () => {
               <textarea
                 id="c-message"
                 name="message"
+                maxLength={2000}
                 rows={4}
                 placeholder="Conte um pouco sobre o projeto"
                 value={values.message}
